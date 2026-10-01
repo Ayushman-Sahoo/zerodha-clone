@@ -1,0 +1,1167 @@
+body {
+  margin: 0;
+  padding-top: 70px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.navbar-toggler {
+  width: 40px;
+  height: 35px;
+  border: none !important;
+  padding: 0;
+  box-shadow: none !important;
+  margin-left: 20px !important;
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-nav {
+  gap: 12px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+  background-color: #fafafa;
+  color: #555;
+  border-top: 1px solid #eee;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+/* =========================================================
+   MAIN FOOTER
+   ========================================================= */
+
+.footer-main {
+  display: grid !important;
+  grid-template-columns: 1.35fr 1fr 1fr 1fr 1fr;
+  column-gap: 45px;
+  align-items: start;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   BOOTSTRAP COLUMN FIX
+   ========================================================= */
+
+.footer-main > .col-lg-2,
+.footer-main > .col-lg-3,
+.footer-main > .col-md-6 {
+  width: auto !important;
+  max-width: none !important;
+  flex: none !important;
+}
+
+/* Remove Bootstrap column padding */
+
+.footer-main > [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* =========================================================
+   ZERODHA COLUMN
+   ========================================================= */
+
+.footer-brand {
+  min-width: 0;
+}
+
+/* Zerodha logo image */
+
+.footer-logo {
+  width: 190px;
+  height: auto;
+  display: block;
+  margin-bottom: 28px;
+}
+
+/* Zerodha copyright text */
+
+.footer-brand p {
+  color: #555;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   FOOTER COLUMNS
+   ========================================================= */
+
+.footer-column {
+  min-width: 0;
+}
+
+.footer-column h5 {
+  color: #424242;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 25px 0;
+  line-height: 1.3;
+}
+
+.footer-column p {
+  color: #555;
+  font-size: 16px;
+  margin: 0 0 22px 0;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   SOCIAL ICONS
+   ========================================================= */
+
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #666;
+}
+
+.social-row span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-row i {
+  font-size: 20px;
+  color: #666;
+}
+
+.social-divider {
+  width: 100%;
+  border-top: 1px solid #eee;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.second-social {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 20px;
+  color: #666;
+}
+
+.second-social span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-social i {
+  font-size: 20px;
+  color: #666;
+}
+
+/* =========================================================
+   APP STORE BUTTONS
+   ========================================================= */
+
+.app-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+/* Actual Google Play / App Store images */
+
+.app-badge {
+  width: 135px;
+  height: auto;
+  display: block;
+}
+
+/* =========================================================
+   MAIN DIVIDER
+   ========================================================= */
+
+.footer-divider {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* =========================================================
+   DISCLAIMER
+   ========================================================= */
+
+.disclaimer {
+  color: #777;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.disclaimer p {
+  margin: 0 0 20px 0;
+}
+
+.disclaimer a {
+  color: #387ed1;
+  text-decoration: none;
+}
+
+.disclaimer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   BOTTOM LINKS
+   ========================================================= */
+
+.bottom-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.bottom-links a {
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+}
+
+.bottom-links a:hover {
+  color: #387ed1;
+}
+
+/* =========================================================
+   PRICING PAGE
+   ========================================================= */
+
+/* Brokerage tabs */
+
+.pricing-tab {
+  background: none;
+  border: none;
+  padding: 12px 18px;
+  color: #387ed1;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.pricing-tab.active {
+  border-bottom: 2px solid #387ed1;
+  color: #222;
+}
+
+/* Pricing tables */
+
+.pricing-table {
+  font-size: 11px;
+  color: #424242;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.pricing-table th {
+  font-weight: 500;
+  background-color: #fafafa;
+}
+
+.pricing-table td,
+.pricing-table th {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+/* Pricing sections */
+
+.pricing-section {
+  margin-top: 70px;
+}
+
+.pricing-section h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* FREE badge */
+
+.free-badge {
+  background-color: #387ed1;
+  color: white;
+  padding: 2px 6px;
+  font-size: 10px;
+  border-radius: 2px;
+}
+
+/* AMC free note */
+
+.free-note {
+  display: inline-block;
+  border-left: 2px solid #387ed1;
+  padding: 8px 12px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+/* Charges explained */
+
+.charge-column {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.charge-column h5 {
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.charge-column p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Pricing disclaimer */
+
+.pricing-section.disclaimer {
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.pricing-section.disclaimer p {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1400px) {
+  .footer-main {
+    max-width: 1200px;
+    column-gap: 35px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer-main {
+    max-width: 100%;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-main {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+
+  .pricing-section {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer-main {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    row-gap: 35px;
+  }
+
+  .footer-brand {
+    grid-column: span 1;
+  }
+
+  .app-buttons {
+    flex-wrap: wrap;
+  }
+
+  .app-badge {
+    width: 135px;
+  }
+
+  .bottom-links {
+    justify-content: flex-start;
+  }
+
+  /* Pricing mobile */
+
+  .pricing-section {
+    margin-top: 45px;
+  }
+
+  .pricing-table {
+    font-size: 10px;
+  }
+
+  .pricing-table td,
+  .pricing-table th {
+    padding: 7px;
+  }
+
+  .charge-column {
+    margin-bottom: 30px;
+  }
+
+  .pricing-tab {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+
+/* =========================================================
+   PRICING / CHARGES PAGE
+   ========================================================= */
+
+.pricing-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* Heading */
+
+.pricing-heading {
+  padding-top: 35px;
+  padding-bottom: 45px;
+}
+
+.pricing-heading h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.pricing-heading p {
+  color: #777;
+  font-size: 14px;
+  margin: 0;
+}
+
+
+/* Three pricing cards */
+
+.pricing-cards {
+  margin-bottom: 55px;
+}
+
+.pricing-card {
+  padding: 20px 35px;
+}
+
+.pricing-card img {
+  width: 150px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.pricing-card h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.pricing-card p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #666;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+
+/* Brokerage section */
+
+.brokerage-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* Tabs */
+
+.pricing-tabs {
+  display: flex;
+  gap: 35px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.pricing-tabs button {
+  background: none;
+  border: none;
+  padding: 12px 5px;
+  color: #387ed1;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.pricing-tabs button.active {
+  color: #222;
+}
+
+.pricing-tabs button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #387ed1;
+}
+
+
+/* Tables */
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  margin-bottom: 0;
+}
+
+.pricing-table th,
+.pricing-table td {
+  border: 1px solid #ddd !important;
+  padding: 9px 10px !important;
+  vertical-align: middle;
+  color: #424242;
+}
+
+.pricing-table th {
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+
+/* Calculator */
+
+.calculator-link {
+  text-align: center;
+  padding: 18px 0 45px;
+}
+
+.calculator-link a {
+  color: #387ed1;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.calculator-link a:hover {
+  text-decoration: underline;
+}
+
+
+/* Sections */
+
+.pricing-section {
+  margin-bottom: 55px;
+}
+
+.pricing-section h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 18px;
+}
+
+.pricing-section h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #424242;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.pricing-section p,
+.pricing-section li {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #555;
+}
+
+
+/* Free badge */
+
+.free-badge {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  font-size: 9px;
+  font-weight: 600;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+
+
+/* AMC */
+
+.free-note {
+  display: inline-block;
+  border-left: 3px solid #387ed1;
+  background-color: #f7f9fb;
+  padding: 10px 15px;
+  font-size: 12px;
+  color: #424242;
+  margin-bottom: 15px;
+}
+
+.small-text {
+  font-size: 10px !important;
+  color: #777 !important;
+}
+
+
+/* Charges explained */
+
+.charges-explained {
+  margin-top: 10px;
+}
+
+.charges-explained > div {
+  padding-left: 20px;
+  padding-right: 35px;
+}
+
+.charges-explained ul {
+  padding-left: 20px;
+}
+
+
+/* Disclaimer */
+
+.disclaimer-section {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.disclaimer-section h5 {
+  margin-top: 0;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .pricing-heading {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .pricing-heading h1 {
+    font-size: 24px;
+  }
+
+  .pricing-card {
+    margin-bottom: 30px;
+  }
+
+  .pricing-cards {
+    margin-bottom: 25px;
+  }
+
+  .brokerage-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .pricing-tabs {
+    gap: 20px;
+  }
+
+  .pricing-table {
+    font-size: 10px;
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    padding: 7px !important;
+  }
+
+}
+
+/* =========================================
+   ZERODHA SUPPORT PAGE
+   ========================================= */
+
+.support-hero {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 32px 0;
+}
+
+.support-header {
+  margin-bottom: 24px;
+}
+
+.support-heading {
+  margin: 0;
+  color: #424242;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.support-ticket-btn {
+  background-color: #387ed1;
+  border: 1px solid #387ed1;
+  color: #ffffff;
+  padding: 12px 22px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.support-ticket-btn:hover {
+  background-color: #387ed1;
+  border-color: #387ed1;
+  color: #ffffff;
+}
+
+.support-search {
+  height: 58px;
+}
+
+.support-search-icon {
+  width: 58px;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-right: none;
+  color: #777777;
+  font-size: 16px;
+}
+
+.support-search-input {
+  height: 58px;
+  border: 1px solid #dddddd;
+  border-left: none;
+  border-radius: 0;
+  box-shadow: none !important;
+  color: #424242;
+  font-size: 16px;
+}
+
+.support-search-input:focus {
+  border-color: #dddddd;
+}
+
+.support-search-input::placeholder {
+  color: #999999;
+}
+
+
+/* =========================================
+   SUPPORT TOPICS
+   ========================================= */
+
+.support-topics {
+  max-width: 1080px;
+  padding-top: 58px;
+  padding-bottom: 80px;
+}
+
+.support-topic-heading {
+  color: #222222;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+
+/* =========================================
+   LEFT ACCORDION
+   ========================================= */
+
+.support-accordion-item {
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 0 !important;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.support-accordion-button {
+  min-height: 70px;
+  padding: 0 !important;
+  background-color: #ffffff !important;
+  color: #424242 !important;
+  box-shadow: none !important;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.support-accordion-button:not(.collapsed) {
+  background-color: #ffffff !important;
+  color: #424242 !important;
+  box-shadow: none !important;
+}
+
+.support-accordion-button::after {
+  width: 16px;
+  height: 16px;
+  margin-right: 24px;
+  background-size: 16px;
+}
+
+.support-icon-box {
+  width: 60px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-right: 1px solid #e0e0e0;
+  color: #387ed1;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.support-title {
+  padding-left: 18px;
+  color: #424242;
+}
+
+
+/* =========================================
+   ACCORDION CONTENT
+   ========================================= */
+
+.support-accordion-body {
+  padding: 18px 60px 22px;
+  border-top: 1px solid #eeeeee;
+  background-color: #ffffff;
+}
+
+.support-accordion-body ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.support-accordion-body li {
+  padding: 5px 0;
+  color: #387ed1;
+  font-size: 12px;
+}
+
+.support-accordion-body a {
+  color: #387ed1;
+  text-decoration: none;
+}
+
+.support-accordion-body a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   RIGHT SIDEBAR
+   ========================================= */
+
+.support-sidebar {
+  padding-left: 20px;
+}
+
+
+/* FEATURED */
+
+.support-featured {
+  background-color: #fff4e5;
+  border-left: 4px solid #ff9800;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+}
+
+.support-featured h5 {
+  display: none;
+}
+
+.support-featured ul {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.support-featured li {
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.support-featured li:last-child {
+  margin-bottom: 0;
+}
+
+.support-featured a {
+  color: #387ed1;
+  text-decoration: underline;
+}
+
+
+/* QUICK LINKS */
+
+.support-quick-links {
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+.support-quick-title {
+  background-color: #f5f5f5;
+  color: #424242;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 12px;
+}
+
+.support-quick-links a {
+  display: block;
+  padding: 10px 12px;
+  border-top: 1px solid #e0e0e0;
+  color: #387ed1;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.support-quick-links a:hover {
+  background-color: #fafafa;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 991px) {
+
+  .support-sidebar {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .support-hero {
+    padding: 25px 0;
+  }
+
+  .support-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .support-header .text-md-end {
+    text-align: left !important;
+  }
+
+  .support-ticket-btn {
+    margin-bottom: 5px;
+  }
+
+  .support-topics {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .support-topic-heading {
+    font-size: 22px;
+  }
+
+  .support-icon-box {
+    width: 55px;
+  }
+
+  .support-accordion-button::after {
+    margin-right: 15px;
+  }
+
+  .support-accordion-body {
+    padding: 18px 25px;
+  }
+
+}
+
+/* =========================================================
+   SIGNUP PAGE
+   ========================================================= */
+
+.signup-page {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  min-height: 70vh;
+}
+
+.signup-page h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #424242;
+  margin-bottom: 20px;
+}
+
+.signup-page .signup-subtitle {
+  color: #666;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+.signup-card {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 35px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.signup-card h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #424242;
+  margin-bottom: 25px;
+}
+
+.signup-form {
+  text-align: left;
+}
+
+.signup-form label {
+  display: block;
+  font-size: 14px;
+  color: #424242;
+  margin-bottom: 7px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.signup-form input:focus {
+  border-color: #387ed1;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 3px;
+  background-color: #387ed1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.signup-button:hover {
+  background-color: #2f6fb5;
+}
+
+.signup-login {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.signup-login a {
+  color: #387ed1;
+  text-decoration: none;
+}
+
+.signup-login a:hover {
+  text-decoration: underline;
+}
+
+.signup-note {
+  margin-top: 25px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #888;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .signup-page {
+    padding: 100px 20px 60px;
+  }
+
+  .signup-page h1 {
+    font-size: 28px;
+  }
+
+  .signup-page .signup-subtitle {
+    font-size: 15px;
+  }
+
+  .signup-card {
+    padding: 25px 20px;
+  }
+}

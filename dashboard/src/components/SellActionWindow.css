@@ -1,0 +1,87 @@
+#sell-window {
+  width: 400px;
+  height: 220px;
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#sell-window .regular-order {
+  padding: 20px;
+}
+
+#sell-window .inputs {
+  display: flex;
+  gap: 20px;
+}
+
+#sell-window fieldset {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 150px;
+}
+
+#sell-window legend {
+  font-size: 12px;
+  color: #666;
+  padding: 0 5px;
+}
+
+#sell-window input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#sell-window .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+}
+
+#sell-window .buttons span {
+  font-size: 12px;
+  color: #666;
+}
+
+#sell-window .buttons > div {
+  display: flex;
+  gap: 10px;
+}
+
+#sell-window .btn {
+  padding: 8px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+}
+
+#sell-window .btn-red {
+  background-color: #ff5722;
+  color: white;
+}
+
+#sell-window .btn-red:hover {
+  background-color: #e64a19;
+}
+
+#sell-window .btn-grey {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+#sell-window .btn-grey:hover {
+  background-color: #ddd;
+}
